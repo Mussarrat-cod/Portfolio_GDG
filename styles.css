@@ -1,0 +1,252 @@
+/* ===== GLOBAL ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    background-color: #0d1b2a;
+    color: #e0e6ed;
+    line-height: 1.7;
+  }
+  
+  /* ===== NAVBAR ===== */
+  .navbar {
+    background-color: #0a192f;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+  }
+  
+  .nav-logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #64ffda;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+  }
+  
+  .nav-menu a {
+    color: #e0e6ed;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-menu a:hover {
+    color: #64ffda;
+  }
+  
+  /* ===== HERO ===== */
+  .hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #112240, #0a192f);
+    color: #e0e6ed;
+  }
+  
+  .hero h1 {
+    font-size: 2.8rem;
+    color: #64ffda;
+    margin-bottom: 10px;
+  }
+  
+  .hero .subtitle {
+    color: #c0cad5;
+    margin-bottom: 10px;
+  }
+  
+  .buttons {
+    margin-top: 25px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .btn.primary {
+    background: #64ffda;
+    color: #0a192f;
+  }
+  
+  .btn.secondary {
+    border: 2px solid #64ffda;
+    color: #64ffda;
+  }
+  
+  .btn:hover {
+    transform: scale(1.05);
+    background: #45e1bb;
+    color: #0a192f;
+  }
+  
+  /* ===== SECTIONS ===== */
+  .section {
+    padding: 70px 20px;
+  }
+  
+  .section.alt {
+    background-color: #112240;
+  }
+  
+  .container {
+    width: 85%;
+    margin: auto;
+    max-width: 1200px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #64ffda;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+  
+  /* ===== BOXES & CARDS ===== */
+  .box,
+  .card {
+    background: #0a192f;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px rgba(100, 255, 218, 0.2);
+  }
+  
+  .box p {
+    text-align: center;
+    color: #c0cad5;
+  }
+  
+  /* ===== GRID ===== */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+  
+  .card h3 {
+    color: #64ffda;
+    margin-bottom: 10px;
+  }
+  
+  .card h4 {
+    color: #c0cad5;
+    margin-bottom: 5px;
+    font-weight: 500;
+  }
+  
+  .card ul {
+    list-style: disc;
+    margin-left: 20px;
+    color: #c0cad5;
+  }
+  
+  .small {
+    color: #aab7cf;
+    font-size: 0.85rem;
+  }
+  
+  /* ===== CONTACT ===== */
+  .contact-box {
+    text-align: center;
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .contact-links a {
+    color: #64ffda;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact-links a:hover {
+    color: #45e1bb;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #aab7cf;
+  }
+  
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 768px) {
+    .nav-menu {
+      display: none;
+    }
+  
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  .about-image img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #64ffda;
+    box-shadow: 0 0 25px rgba(100, 255, 218, 0.3);
+    transition: transform 0.4s;
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+  }
+  
+  .about-text {
+    max-width: 550px;
+  }
+  
+  .about-text p {
+    color: #c0cad5;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  
