@@ -19,19 +19,15 @@ This is a clean, modern, and responsive professional portfolio website designed 
 ## Usage
 1. Clone or download the repository.
 2. Open `index.html` in any modern web browser.
-3. Customize the content by editing the HTML file:
-   - Replace text with your own details.
-   - Replace the profile image with your own photo.
-   - Update skills, education, experience, and projects as needed.
-4. Optionally, modify the CSS (`style.css`) to change colors, fonts, or layout.
+
 
 ## Technologies Used
 - HTML5
 - CSS3 (Flexbox for layout and responsiveness)
-- No JavaScript required (can be added later if desired)
+- JavaScript 
 
 ## Contact
-You can reach me at: [your email or contact info here]
+You can reach me at: mussaratkittur@gmail.com
 
 ---
 
