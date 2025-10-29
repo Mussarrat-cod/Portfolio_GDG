@@ -31,4 +31,4 @@ You can reach me at: mussaratkittur@gmail.com
 
 ---
 
-Feel free to customize this README for your needs! Want me to tailor it to your portfolio content or add instructions on hosting it online?
+
